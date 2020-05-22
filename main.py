@@ -14,38 +14,16 @@ from debug.debug import log_error
 from config import TOKEN
 
 
-# @user_check
 @log_error
 def do_start(update: Update, context: CallbackContext):
     """ Функция обработчик команды /start """
-
-    print('\nUser: ', update.effective_user.username)
-    print('ID: ', update.message.chat_id)
-
-    update.message.reply_text(
-        text=f"Привет, {update.message.chat.first_name} 👋\n"
-             f"Я бот компании <b>{context.bot.get_me().first_name}</b>.\n\n"
-             f"<em>Бот создан только для сотрудников компании WONDERWALL.</em>",
-        parse_mode=ParseMode.HTML,
-    )
-
-    update.message.reply_text(
-        text=f"Бот находится в разработке",
-        parse_mode=ParseMode.HTML,
-    )
+    pass
 
 
-# @user_check
 @log_error
 def do_echo(update: Update, context: CallbackContext):
     """ Функция обработчик входящих сообщений """
-    send_operator_msg(context, 'TEst')
-
-    update.message.reply_text(
-        text=f"Бот находится в разработке",
-        parse_mode=ParseMode.HTML,
-    )
-
+    pass
 
 @log_error
 def do_help(update: Update, context: CallbackContext):
