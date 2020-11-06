@@ -9,7 +9,6 @@ from telegram.ext import MessageHandler
 from telegram.utils.request import Request
 
 from debug.color import ColorsPrint
-from brain.base_brain import user_check, send_operator_msg
 from debug.debug import log_error
 from config import TOKEN
 
